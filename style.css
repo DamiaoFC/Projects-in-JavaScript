@@ -1,0 +1,14 @@
+body
+
+.contacts_list {
+    list-style-type: none;
+    padding-left:50px;
+}
+
+.contacts_list li a {
+    text-decoration: none;
+}
+
+.contacts_list {
+    margin-top: 200px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Consulta CEP</title>
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstarp.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand text-white">Consulta CEP</a>
+            <div class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Insira seu CEP" id="cep">
+                <button class="btn btn-outline-success my-2 my-sm-0" onclick="consultaCep()">Buscar</button>
+            </div>
+        </nav>
+        
+        <div class="container barra-progresso" style="margin-top: 80px;">
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+            </div>
+        </div>
+
+        <div class="container cep" style="margin-top:20px;">
+            <div class="row">
+                <h3 id="titulo_cep">CEP</h3>
+            </div>
+            <div class="row" style="margin-top:20px;">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td>Logradouro</td>
+                            <td id="logradouro"></td>
+                        </tr>
+                        <tr>
+                            <td>Bairro</td>
+                            <td id="bairro"></td>
+                        </tr>
+                        <tr>    
+                            <td>Localidade</td>
+                            <td id="localidade"></td>
+                        </tr>
+                        <tr>
+                            <td>UF</td>
+                            <td id="uf"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <footer>
+            <ul class="contacts_list">
+                <li>
+                   <a href="mailto:damiaoWp10@outlook.com">damiaoWp10@outlook.com</a> 
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/dami%C3%A3o-ferreira-9426b4174/" target="_blank">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="https://github.com/DamiaoFC" target="_blank">Github</a>
+                </li>
+            </ul>
+        </footer>
+    
+    </body>
+</html>
